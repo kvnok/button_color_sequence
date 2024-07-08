@@ -1,0 +1,36 @@
+:root {
+	--button_background: rgb(141, 149, 27);
+	--button_color: black;
+	--button_border: rgb(148, 157, 24);
+	--button_hover: rgb(222, 235, 44);
+	--button_active: rgb(230, 247, 2);
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 0;
+	transition: background-color 0.1s ease;
+}
+
+button {
+	cursor: pointer;
+	background-color: var(--button_background);
+	color: var(--button_color);
+	height: 40px;
+	font-size: 1rem;
+	font-weight: bold;
+	border: 2px solid var(--button_border);
+	border-radius: 100vw;
+	padding-inline: 30px;
+}
+
+button:hover {
+	border: 2px solid var(--button_hover);
+}
+
+button:active {
+	background-color: var(--button_active);
+}
